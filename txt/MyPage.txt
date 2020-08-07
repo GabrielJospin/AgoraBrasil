@@ -1,0 +1,23 @@
+****Admin**** ok
+Lisa Usuarios
+Editar Ususarios !Edit level
+Excluir Usuarios
+
+****Master****
+Textos para Aprovação (Aprovar/Rejeitar)
+Escrever Textos
+Ver Textos
+Escrever Editorias
+
+****Columnist***
+Escrever Texto
+Ver Texto Dele
+
+****Writer****
+Escrever Textos
+Ver Textos Aprovados
+Textos na Fila
+Seguidores
+
+****Reader****
+Textos por Tag

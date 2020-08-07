@@ -1,0 +1,12 @@
+        USERS
+ID int
+Name String
+Usuario String@String
+Senha String
+Nivel {
+    Reader
+    Writer
+    Columnist
+    Master
+    Admin
+}

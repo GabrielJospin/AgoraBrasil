@@ -1,0 +1,8 @@
+import from user{
+    ID int
+    Name String
+    Usuario String@String
+    Nivel {Writer, Comlunist, Master}
+}
+
+array Noticias.id

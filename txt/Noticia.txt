@@ -1,0 +1,9 @@
+        NOTICIA
+ Publicada Boolean
+ Titulo  String
+ Subtitulo String
+ Corpo String
+ Imagen URL ===> "caminho/para/imagem.jpg"
+ Data hora/atual
+ @Id_Autor from USERS
+ Local String
