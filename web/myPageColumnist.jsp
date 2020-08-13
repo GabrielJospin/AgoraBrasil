@@ -6,6 +6,8 @@
 <%@ page import="javax.imageio.ImageIO" %>
 <%@ page import="java.io.File" %>
 <%@ page import="java.awt.image.BufferedImage" %>
+<%@ page import="jdk.nashorn.internal.runtime.regexp.joni.Config" %>
+<%@ page import="java.io.InputStream" %>
 <%@ page contentType="text/html;charset=iso-8859-1" language="java" %>
 <html>
 <head>
@@ -103,7 +105,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Imagem</label>
-                <input type="file" class="form-control-file" name="img" id="exampleFormControlFile1">
+                <input action="upload"  type="file" enctype="multipart/form-data" class="form-control-file" name="img" id="exampleFormControlFile1">
             </div>
             <input class="form-control form-control-sm" type="text" name="txtLocal" placeholder="Local">
             <%
@@ -147,7 +149,6 @@
             while (rs2.next()) {
                 id = rs2.getString(1);
             }
-            out.print(id);
 
             Statement st3 = con.createStatement();
             st3.executeUpdate("update news SET Imagem = 'img/news/img-" + id + "' where  id = '" + id + "'");
@@ -163,8 +164,11 @@
             }
             out.print("<Script>alert('Publicada!');</Script>");
 
+
         } catch (Exception e) {
-            out.print(e);
+
+            out.print(e+" ");
+            e.printStackTrace();
         }
     }
 
